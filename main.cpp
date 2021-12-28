@@ -1,18 +1,16 @@
 #include <iostream>
-#include "headers/Gaussian_Quadrature.h"
 #include "headers/GaussElimination.h"
 #include <math.h>
 #include <vector>
-#include "headers/BL.h"
 #include <fstream>
-#include <iostream>
+#include "BL.h"
 using std::cout;
 
 int main()
 {
     int a = 0;
     int b = 2;
-    int n = 15;
+    int n = 500;
 
     float **arrayB;
     arrayB = new float *[n];
@@ -28,9 +26,15 @@ int main()
         }
         arrayL[i] = L(i, n, a, b);
     }
+
+    float *result = gaussElimination(n, arrayB, arrayL);
+    for (int i = 0; i < n; ++i) {
+        printf("%f ", result[i]);
+    }
+
+
     std::ofstream outfile;
     outfile.open("../result.txt", std::ofstream::out | std::ofstream::trunc);//std::ios_base::app
-    float *result = gaussElimination(n, arrayB, arrayL);
     outfile << n;
     outfile <<";";
     outfile << a;
@@ -43,6 +47,7 @@ int main()
             outfile << ";";
         printf("%f ", result[i]);
     }
-
     outfile.close();
+
+    system("cd .. & python graph.py");
 }

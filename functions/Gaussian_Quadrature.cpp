@@ -2,8 +2,6 @@
 #include "../headers/Gaussian_Quadrature.h"
 using std::cout;
 
-
-
 float gaussianQuadrature(float a, float b, FL *f, bool isB){
 	// predefined points for gaussian quadrature
 	float points[3] = { -0.774597, 0, 0.774597 };
