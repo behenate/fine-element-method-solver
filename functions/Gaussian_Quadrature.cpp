@@ -1,7 +1,5 @@
 #include <iostream>
 #include "../headers/Gaussian_Quadrature.h"
-#include <math.h>
-#include "../headers/BL.h"
 using std::cout;
 
 

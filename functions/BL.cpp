@@ -1,8 +1,6 @@
 #include <iostream>
 #include <math.h>
 #include "../headers/BL.h"
-#include "../headers/e.h"
-#include "../headers/xi.h"
 #include "../headers/Gaussian_Quadrature.h"
 
 using std::cout;
