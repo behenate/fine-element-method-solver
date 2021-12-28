@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
 project(Finite_Element_Method_Project)
 
+
+
 set(CMAKE_CXX_STANDARD 23)
 include_directories(functions headers)
 
@@ -15,4 +17,5 @@ add_executable(
         headers/e.h
         headers/Gaussian_Quadrature.h
         headers/xi.h
-        functions/GaussElimination.cpp headers/GaussElimination.h)
+        functions/GaussElimination.cpp headers/GaussElimination.h
+)

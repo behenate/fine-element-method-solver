@@ -15,22 +15,7 @@ float *gaussElimination(int n, float **matrixB, float *matrixL){
                 matrixB[j][k] -= c*matrixB[i][k];
             }
             matrixL[j] -= c*matrixL[i];
-//            Print for debugging
-//            printf("\n");printf("\n");
-//            for (int i = 0; i < n; ++i) {
-//                for (int j = 0; j < n; ++j) {
-//                    printf("%f \t", matrixB[i][j]);
-//                }
-//                printf("\n");
-//            }
         }
-    }
-    printf("\n");printf("\n");
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            printf("%f \t", matrixB[i][j]);
-        }
-        printf("\n");
     }
 //    Same process as above, just starts from the bottom
     for (int i = n-1; i >= 1; --i) {
