@@ -17,10 +17,10 @@ float gaussianQuadrature(float a, float b, FL *f, bool isB){
 		float normalized_point = points[i] * ((b - a) / 2) + ((a + b) / 2);
 		if (isB)
 		{
-			sum += f->functionInsideB(normalized_point) * weights[i];
+			sum += f->toIntegrateB(normalized_point) * weights[i];
 		}
 		else {
-			sum += f->functionInsideL(normalized_point) * weights[i];
+			sum += f->toIntegrateL(normalized_point) * weights[i];
 		}
 	}
 	sum = ((b - a) / 2) * sum;
