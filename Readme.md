@@ -1,4 +1,4 @@
-# Heat Transfer Equation Solution Project
+# Heat Transfer Equation Solution
 
 This project solves the heat transfer equation using finite element method.
 
