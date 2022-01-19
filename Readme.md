@@ -1,11 +1,12 @@
 # Heat Transfer Equation Solution Project
 
-This project solves the heat transfer equation using finite element method.
+This project solves the following heat transfer equation using finite element method.
+<img src="images/uno.jpg" />
 
- The code uses information from calculations below:![solution](images/solution.jpg)
+<img src="images\dos.jpg" alt="solution" style="zoom:150%;" />
 
-<img src="images/1.jpg" />
+The code uses information from calculations located in the solution.pdf file.
 
-<img src="images\2.jpg" alt="solution" style="zoom:150%;" />
+
 
 <img src="images/3.jpg" />

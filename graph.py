@@ -24,7 +24,7 @@ def getU(x, n, a, b, result_arr):
     return sum
 
 
-f = open("result.txt", "r")
+f = open("../result.txt", "r")
 content_arr = f.read().split(";")
 n = int(content_arr[0])
 a = float(content_arr[1])
