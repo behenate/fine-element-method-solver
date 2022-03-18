@@ -9,4 +9,4 @@ The code uses information from calculations located in the solution.pdf file.
 
 
 
-<img src="images/3.jpg" />
+<img src="images/demo.gif" />

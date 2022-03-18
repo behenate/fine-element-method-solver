@@ -17,6 +17,7 @@ float *gaussElimination(int n, float **matrixB, float *matrixL){
             matrixL[j] -= c*matrixL[i];
         }
     }
+
 //    Same process as above, just starts from the bottom
     for (int i = n-1; i >= 1; --i) {
         for (int j = i-1; j >= 0; --j) {
